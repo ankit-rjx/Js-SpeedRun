@@ -1,63 +1,177 @@
-console.log("Day 03");
+// console.log("Day 03");
 
-// Operator - Symbols - that you apply on something to carr out a calculation.for different kind of operations you have different kind of operator .. so to perform an operaton you need a symbol that we call as operator .
+// // Operator - Symbols + - * /
+// // Operands - x+y, x and y are the operands.
+// // Expression x = 2 / 3 + 4
 
-// Operands - these are the values on which your operator works on.
+// // Arithmetic Operators
+// console.log("**** Arithmetic Operators ****")
+// let a = 12;
+// let b = 5;
 
-// Expression - expression is something which resolve to a value .
+// let f_name = "tapas"
+// let l_name = "adhikary"
 
-// x = 2 - you are assigning a value to x .
+// console.log(f_name + l_name) // don't do this!
 
-// expression is something which can resolve to a value .
+// console.log(a + b);
+// console.log(a - b);
+// console.log(b - a);
+// console.log(a * b);
+// console.log(a / b);
+// console.log(a ** b)
+// console.log(a % b)
 
-// let x = 4 + 5; // this is expression - inside this expression too many things are happening .
+// let count = 5;
+// console.log(count--) // count = count - 1
+// console.log(count)
 
-// use the operands and operator together to get another value as a output - this also called expression .
+// console.log(--count) // count = count - 1
 
-// Expression can Resolve to a Value .
+// // Assignment Operators
+// console.log("**** Assignment Operators ****")
 
-// 3 + 4 - this is called evaluating expression
+// let x = 10;
+//  x += 5; // x = x + 5 (15)
+//  x -=3; // x = x - 3 (12)
+//  x *= 2; // x = x * 2 (24)
+//  x /= 4; // x = x / 4 (6)
 
-//types of operator
 
-// Arithmetic
-// Assignment
-// Comparision
-// Relational
-// Logical
-// Bitwise
-// Conditional
-// Grouping
-// type of
-// instance of
+//  // Comparison Operators
+// console.log("**** Comparison Operators ****")
+// console.log(0 == false)
+// console.log(3 == '3')
+// console.log(3 != '3')
 
-// Arithmatic Operator .
+// console.log(3 === '3')
 
-let a = 10;
-let b = 20;
+// console.log(null === null)
+// console.log(undefined === undefined)
 
-console.log(a + b); // 30
-console.log(a - b); // -10
-console.log(b - a); // 10
-console.log(a * b); // 200
-console.log(a / b); // 0.5
+// // NaN = Not a Number
 
-// String Concatination
+// let obj1 = {'name': 'tapaScript'} // XX0011
+// let obj2 = {'name': 'tapaScript'} // YY022
 
-let f_name = 10;
-let l_name = 20;
+// console.log(obj1 === obj2)
+// console.log(obj1 !== obj2)
 
-console.log(f_name + l_name);
+// 4 > 3
+// 2 > 1
+// 1 > 7
+// 2 >= 2
 
-// exponential Operator (**)
+// 4 < 3
+// 2 < 7
+// 3 <= 9
 
-console.log(a ** b); // 10 t0 the power 20
 
-// Post Increment 
+// // Logical operators
+// console.log("**** Logical operators ****")
+// // && || ?? !
+// // op1 && op2
+// console.log(false && false); // false
+// console.log(true && false); // false
+// console.log(true && true); // true
+// console.log(false && true); // false
 
-// count++ it will return the value first then it increments thr value 
+// console.log("Cow" && "Horse"); // "Horse"
 
-// ++count it will increment the value then it will return. 
+// 4 > 5 && 4 === 6
 
-// similarly there is post and pre decrement as well . 
+// console.log(false || false); // false
+// console.log(true || false); // true
+// console.log(true || true); // true
+// console.log(false || true); // true
 
+// console.log("Cow" || "Horse"); // "Cow"
+
+// comsole.log(!false)
+
+// let a1 = null ?? 1; // 1
+// let a2 = undefined ?? 3 // 3
+// const a3 = false ?? "tapaScript" // false
+// const a4 = 0 ?? "tapas" // 0
+
+
+// // Conditional (ternary) operator
+// console.log("**** Conditional (ternary) operator ****")
+
+// // condition ? val1 : val2
+
+// let age = 23;
+// age >= 60 ? "Senior Citizen" : "Non Senior Citizen";
+
+
+// // Bitwise operators
+// console.log("**** Bitwise operators ****")
+
+// // 10 in decimal
+// // 10 in 32 bits representation of 0, 1
+
+// // & | ^ ~ << >>
+
+// 15 & 9 = 9
+// 1111 & 1001 = 1001 = 1 * (2 ** 0) + 0 * (2 ** 1) + 0 * (2 ** 2) + 1 * (2 ** 3)
+
+// 15 / 2 = 7 (1)
+// 7 / 2 = 3 (1)
+// 3 / 2 = 1 (1)
+
+// 9/2 = 4 (1)
+// 4/2 = 2 (0)
+// 2/2 = 1 (0)
+
+// 15 | 9 = 15
+
+// 1111 | 1001 = 1111
+
+// 15 ^ 9 = 6
+// 1111 ^ 1001 = 0110
+
+// 9 << 2 = 36
+
+// 1001 << 2 = 100100
+
+// 9 >> 2 = 2
+// 1001 >> 2 = 0010
+
+
+// // Grouiping
+// console.log("**** Grouping ****")
+
+// let p = 1;
+// let q = 2;
+// let r = 3;
+
+// console.log(p + q * r) // 1 + 2 * 3 = 1 + 6 = 7
+// p + (q * r) // 7
+
+// (p + q) * r // (1 + 2) * 3 = 3 * 3 = 9
+
+// p * r + q * r = 1 * 3 + 2 * 3 = 3 + 6 = 9
+
+// p * (r + q) * r
+
+
+// // typeof
+// console.log("**** typeof ****")
+
+
+// typeof "tapas"; // "string"
+// typeof false; // "boolean"
+
+// let size = 100;
+// typeof size; // "number"
+
+// const numbers = [1,2,3,4]
+// typeof numbers; // "object"
+
+// typeof null; // "object"
+
+
+// // instanceof
+// console.log("**** instanceof ****")
+
+// // object instanceof objectType
